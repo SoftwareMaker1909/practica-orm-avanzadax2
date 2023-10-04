@@ -1,4 +1,3 @@
-const resolvers = require('https://github.com/SoftwareMaker1909/practica-orm-avanzadax2/blob/1ecadd3d6bd53363924d6686104d324d28fab290/resolvers.js'); // Ajusta la ruta según la ubicación de tu archivo
 
 // Conecta los resolvers al esquema GraphQL
 const schema = makeExecutableSchema({ typeDefs: schemaString, resolvers });
