@@ -36,4 +36,7 @@ const resolvers = {
       // Debes realizar la inserción en tu fuente de datos y devolver el nuevo 'Inventory'.
     },
   },
+  module.exports = resolvers;
+
 };
+
