@@ -27,4 +27,3 @@ app.use('/graphql', graphqlHTTP({ schema, graphiql: true }));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Servidor GraphQL en ejecución en el puerto ${PORT}`));
-
