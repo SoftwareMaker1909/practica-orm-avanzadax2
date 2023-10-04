@@ -1,0 +1,51 @@
+query GetAllInventory {
+  inventory {
+    shop
+    employee
+    icecream {
+      flavor
+      count
+      is_season_flavor
+    }
+    date
+  }
+}
+
+query GetInventoryByFlavor($flavor: String!) {
+  inventoryByFlavor(flavor: $flavor) {
+    shop
+    employee
+    icecream {
+      flavor
+      count
+      is_season_flavor
+    }
+    date
+  }
+}
+
+query GetInventoryByShop($shop: String!) {
+  inventoryByShop(shop: $shop) {
+    shop
+    employee
+    icecream {
+      flavor
+      count
+      is_season_flavor
+    }
+    date
+  }
+}
+
+query GetInventoryByDate($date: String!) {
+  inventoryByDate(date: $date) {
+    shop
+    employee
+    icecream {
+      flavor
+      count
+      is_season_flavor
+    }
+    date
+  }
+}
