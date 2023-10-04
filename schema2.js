@@ -1,10 +1,3 @@
-
-// Conecta los resolvers al esquema GraphQL
-const schema = makeExecutableSchema({ typeDefs: schemaString, resolvers });
-
-// Resto de la configuración del servidor...
-
-
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const { makeExecutableSchema } = require('@graphql-tools/schema');
@@ -34,3 +27,4 @@ app.use('/graphql', graphqlHTTP({ schema, graphiql: true }));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Servidor GraphQL en ejecución en el puerto ${PORT}`));
+
